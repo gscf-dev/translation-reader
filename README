@@ -1,0 +1,71 @@
+Installation Guide for the Python Selenium Project
+Welcome to the installation guide for setting up the Python Selenium project on macOS. This guide will walk you through the steps of cloning the project from GitHub, setting up your development environment in Visual Studio Code, and running the project.
+
+Prerequisites
+Before starting, ensure you have the following installed on your macOS:
+
+Git: For cloning the repository.
+Python 3: The programming language used.
+Visual Studio Code (VS Code): Our recommended IDE.
+If these are not already installed, follow the instructions below:
+
+Installing Homebrew, Git, and Python:
+Install Homebrew by pasting the following in a macOS Terminal:
+
+sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Install Python 3 using Homebrew:
+
+sh
+brew install python
+Install Git with Homebrew if you haven't already:
+
+sh
+brew install git
+Download and Install Visual Studio Code from the official website.
+
+Setting Up the Project
+Clone the Project:
+Open your Terminal, navigate to the directory where you want to store the project, and run:
+
+sh
+Copy code
+git clone https://github.com/yourusername/yourprojectname.git
+Replace https://github.com/yourusername/yourprojectname.git with the URL of your GitHub project.
+
+Navigate to Your Project Directory:
+
+sh
+cd yourprojectname
+Replace yourprojectname with the name of your project directory.
+
+Set Up the Python Virtual Environment:
+Within the project directory, create a new virtual environment by running:
+
+sh
+python3 -m venv .venv
+Then, activate the virtual environment:
+
+sh
+source .venv/bin/activate
+Install Required Python Packages:
+Ensure your requirements.txt file is present in the project directory and contains:
+
+shell
+selenium>=3.14.0
+webdriver-manager>=4.0.1
+langdetect>=1.0.9
+Install the required packages by running:
+
+sh
+pip install -r requirements.txt
+Open the Project in Visual Studio Code:
+Launch VS Code, then open your project folder by selecting File > Open... and navigating to your project directory.
+
+Running Your Selenium Scripts:
+
+Inside VS Code, open any Python script file (.py), right-click in the text editor, and select Run Python File in Terminal to execute the script.
+Additional Information
+Deactivating the Virtual Environment: When finished, you can deactivate the virtual environment by typing deactivate in the terminal within VS Code.
+Updating Packages: If you need to update the Python packages in the future, you can run pip install --upgrade -r requirements.txt within your activated virtual environment.
+Congratulations! You have now set up and are ready to start using the Python Selenium project on macOS.
